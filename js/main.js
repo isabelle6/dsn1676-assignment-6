@@ -10,6 +10,9 @@ var $panel = $('.panel');
 var $btnBounce = $('.btn-bounce');
 var $circle = $('.circle');
 
+var $btnAppend = $('.btn-append');
+var $list = $('.list');
+
 $btnShow.on('click', function () {
     $box.toggleClass('js-box-show-hide');
 });
@@ -28,4 +31,12 @@ $btnBounce.on('click', function () {
 
 $circle.on('animationend', function () {
     $circle.removeClass('js-circle-bounce');
+});
+
+$btnAppend.on('click', function () {
+    var $li = $('<li>');
+    var $listItem = $('<p>').html('New List Item');
+    
+    $list.append($li);
+    $li.append($listItem);
 });

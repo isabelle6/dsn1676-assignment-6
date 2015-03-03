@@ -147,4 +147,11 @@ div {
   border: 1px solid mediumpurple;
 
   color: mediumpurple;
+  height: 1em;
+  position: relative;
+}
+
+  .list p {
+      position: absolute;
+      top: -20%;
 }
