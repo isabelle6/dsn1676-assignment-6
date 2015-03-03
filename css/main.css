@@ -90,8 +90,40 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
+  right: 1em;
 
   background-color: orange;
+}
+
+.js-circle-bounce {
+  animation: circle-bounce 1s ease-out;
+}
+
+@keyframes circle-bounce {
+    0% {
+        top: 0.5em;
+        right: 2em;
+    }
+    20% {
+        top: 2.5em;
+        right: 4em;
+    }
+    40% {
+        top: 1em;
+        right: 6em;
+    }
+    60% {
+        top: 1.7em;
+        right: 8em;
+    }
+    80% {
+        top: 1.1em;
+        right: 10em;
+    }
+    100% {
+        top: 1.4em;
+        right: 12em;
+    }
 }
 
 .list {
